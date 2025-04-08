@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Résultats</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      Données reçues
+    </div>
+  </header>
+
+  <section class="result">
+    <div class="result-container">
+      <div class="item-container">
+        <p>Nom:</p>
+        <span>
+          <%= fields.name %>
+        </span>
+      </div>
+      <div class="item-container">
+        <p>Email: </p>
+        <span>
+          <%= fields.email %>
+        </span>
+      </div>
+
+      <% if (files && files.file[0]) { %>
+        <p><strong>Image envoyée :</strong></p>
+        <img src="/uploads/<%= path.basename(files.file[0].filepath) %>" alt="Image envoyée" style="max-width: 300px;">
+      <% } else { %>
+        <p>Aucune image envoyée.</p>
+      <% } %>
+
+            <br><a href="/">Retour au formulaire</a>
+    </div>
+  </section>
+
+ 
+
+</body>
+
+</html>

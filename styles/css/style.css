@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  color: "red";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+}
+.container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 600px;
+}
+.container .form .input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 20px;
+}
+.container .form .input-field label {
+  width: 100%;
+  margin: 0 auto;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.container .form .input-field input {
+  padding: 10px 0;
+  width: 100%;
+  margin: 0 auto;
+  color: black;
+  border: 3px solid coral;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container .form button {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: coral;
+  color: white;
+  border: 3px solid coral;
+  border-radius: 10px;
+  transition: all 0.3s;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+.container .form button:hover {
+  background-color: white;
+  color: coral;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  background-color: coral;
+}
+.header .container {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.result {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.result .result-container {
+  border: 2px solid coral;
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+.result .result-container .item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.result .result-container .item-container p {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+.result .result-container .item-container span {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

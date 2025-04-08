@@ -1,0 +1,16 @@
+.header{
+    width: 100%;
+    display: flex;
+    background-color: coral;
+    .container{
+        display: flex;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding:20px;
+        color: white;
+        font-weight: 700;
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+}
